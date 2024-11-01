@@ -5,7 +5,7 @@ connection = sqlite3.connect("database.db")
 
 # open the schema.sql file and execute its contents using the executescript() method that executes multiple SQL statements at once, 
 # this will create the posts table.
-with open("schema.sql") as database_schema:
+with open("/Users/riannaellis/Documents/INFOTC 4320/Week11/4320FlaskBlogTut/flask_blog_class/schema.sql") as database_schema:
     connection.executescript(database_schema.read())
 
 # create a cursor object which allows us to process rows in a database.
